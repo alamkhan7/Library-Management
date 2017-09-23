@@ -1,0 +1,445 @@
+
+body{
+    background-image: url("../images/bg1.jpg") ;
+    background-repeat: repeat;
+}
+
+.header{
+	width: 100%;
+}
+.logo{
+	min-height: 150px;
+}
+
+.outter-nav{
+	background-color: transparent;
+	border-color: transparent;
+}
+
+
+.inner-nav{
+	background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 10px grey;
+}
+
+
+
+/* unvisited link */
+.inner-nav li a:link {
+	color: Black;
+	letter-spacing: 2px;
+	font-weight: bold;
+	border-radius: 10px 10px 10px 10px;
+    
+	
+}
+/* visited link */
+.inner-nav li a:visited {
+	color: black;
+	letter-spacing: 2px;
+	font-weight: bold;
+	border-radius: 10px 10px 10px 10px;
+	background-color: #c2c2a3;
+	
+}
+
+/* mouse over link */
+.inner-nav li a:hover{
+	color: green;
+    border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 3px 3px 3px yellow;
+    font-size: 17px;
+}
+/* selected link */
+.inner-nav li a:active {
+	color: red;
+	background-color: #734d26
+}
+
+@media only screen and (min-width: 1100px){
+	
+	.navigation-container{
+		margin-left: auto;
+		margin-right: auto;
+		width: 1230px;
+	}
+
+	.main-content{
+		width: 1160px;
+	}
+
+	.first-row{
+		margin-right: -50px;
+		margin-left: -50px;
+
+	}
+
+	.dashboard{
+	border-radius: 20px;
+	width: 74%;
+	margin-left: 1%;
+}
+
+    .admin-table{
+    border-radius: 20px;
+    width: 82%;
+    margin-left: 1%;
+}
+
+	
+	
+}
+
+/*Book.html Page CSS*/
+.mini-submenu{
+  display:none;  
+  background-color: rgba(0, 0, 0, 0);  
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 4px;
+  padding: 9px;  
+  /*position: relative;*/
+  width: 42px;
+
+}
+
+.mini-submenu:hover{
+  cursor: pointer;
+}
+
+.mini-submenu .icon-bar {
+  border-radius: 1px;
+  display: block;
+  height: 2px;
+  width: 22px;
+  margin-top: 3px;
+}
+
+.mini-submenu .icon-bar {
+  background-color: #000;
+}
+
+#slide-submenu{
+  background: rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.book-description{
+	background-image: url("../images/book-description-bg.jpg");
+	background-repeat: repeat;
+	background-size: contain;
+	border-radius: 12px;
+	padding: 5px;
+}
+.category{
+
+	padding: 5px;
+	
+}
+
+.category .btn-group-vertical{
+	width: 100%;
+	border: 10px solid white;
+	border-radius: 20px;
+
+}
+
+
+.category .btn-group-vertical .btn {
+	background-color: #5b5b3e;
+}
+
+.category .btn-group-vertical .btn:hover {
+	background-color: #acac86;
+}
+
+.profile{
+	border-radius: 20px;
+}
+
+/*Profie code*/
+.card {
+    padding-top: 20px;
+    margin: 10px 0 20px 0;
+    background-color: rgba(214, 224, 226, 0.2);
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card .card-heading {
+    padding: 0 20px;
+    margin: 0;
+}
+
+.card .card-heading.simple {
+    font-size: 20px;
+    font-weight: 300;
+    color: #777;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.card .card-heading.image img {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    margin-right: 15px;
+    vertical-align: top;
+    border: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.card .card-heading.image .card-heading-header {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card .card-heading.image .card-heading-header h3 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+}
+
+.card .card-heading.image .card-heading-header span {
+    font-size: 12px;
+    color: #999999;
+}
+
+.card .card-body {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.card .card-media {
+    padding: 0 20px;
+    margin: 0 -14px;
+}
+
+.card .card-media img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card .card-actions {
+    min-height: 30px;
+    padding: 0 20px 20px 20px;
+    margin: 20px 0 0 0;
+}
+
+.card .card-comments {
+    padding: 20px;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.card .card-comments .comments-collapse-toggle {
+    padding: 0;
+    margin: 0 20px 12px 20px;
+}
+
+.card .card-comments .comments-collapse-toggle a,
+.card .card-comments .comments-collapse-toggle span {
+    padding-right: 5px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #999;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-comments .media-heading {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card.people {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    height: 300px;
+    padding-top: 0;
+    margin-left: 20px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.card.people:first-child {
+    margin-left: 0;
+}
+
+.card.people .card-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 170px;
+    height: 150px;
+    background-color: #ffffff;
+}
+
+.card.people .card-top.green {
+    background-color: #53a93f;
+}
+
+.card.people .card-top.blue {
+    background-color: #427fed;
+}
+
+.card.people .card-info {
+    position: absolute;
+    top: 150px;
+    display: inline-block;
+    width: 100%;
+    height: 101px;
+    overflow: hidden;
+    background: #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card.people .card-info .title {
+    display: block;
+    margin: 8px 14px 0 14px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #404040;
+}
+
+.card.people .card-info .desc {
+    display: block;
+    margin: 8px 14px 0 14px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 16px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+
+.card.people .card-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    line-height: 29px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(214, 224, 226, 0.2);
+}
+
+.card.hovercard .cardheader {
+	background:url("../images/profile-bg1.jpg"); 
+	no-repeat;
+    /*background: url("http://lorempixel.com/850/280/nature/4/");*/
+    background-size: cover;
+    height: 135px;
+}
+
+.card.hovercard .avatar img {
+    width: 250px;
+    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 30%;
+    border-radius: 30%;
+    border: 5px solid rgba(255,255,255,0.5);
+}
+
+.card.hovercard .info {
+    padding: 4px 8px 10px;
+}
+
+.card.hovercard .info .title {
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 1;
+    color: #262626;
+    vertical-align: middle;
+}
+
+.card.hovercard .info .desc {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}
+
+.card .btn{ border-radius: 50%; width:32px; height:32px; line-height:18px;  }
+/*end of profile code*/
+
+/*admin page*/
+.admin-sidebar{
+    border-radius: 20px;
+}
+
+.red{
+    color:red;
+    }
+.form-area
+{
+    background-color: #FAFAFA;
+    padding: 10px 40px 60px;
+    margin: 10px 0px 60px;
+    border: 1px solid GREY;
+    }
+
+/*end of admin page*/
+
+/*input photo*/
+.image-preview-input {
+    position: relative;
+    overflow: hidden;
+    margin: 0px;    
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;    
+}
+.image-preview-input input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.image-preview-input-title {
+    margin-left:2px;
+}
+/*end input photo*/
